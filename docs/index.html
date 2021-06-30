@@ -24,11 +24,11 @@ class: center, middle
 
 # Pandemic Tracker
 
-### A Web Application to Collect and Analyse impact of Pandemic
+### An Application to Collect and Analyse impact of Pandemic
 
 ---
 
-# Agenda
+## Agenda
 
 1. Introduction
 2. Application Infrastructure & Components
@@ -38,7 +38,63 @@ class: center, middle
 
 ---
 
-# Introduction
+## Introduction
+
+Pandemic Tracker is a web and mobile based application to collect details about the civilians in an area (City, Municipality, Panchayath etc).
+
+The application is planned to develop based on initial data collection discussions and the team is trying to make it modular and flexible to absorb future changes and feature requests but with best efforts. 
+
+The application and data will be stored in cloud servers based on discussions as storing data in the cloud needs to be aligned with privacy and other laws applicable.
+
+???
+
+Notes
+
+---
+
+## High Level Design (HLD)
+
+.center[![High Level Design](images/app-infra-hld.png)]
+
+---
+
+## Application Components
+
+1. **Web Application** (FrontEnd) - Can be accessible from anywhere via internet using a browser on a Workstation or Smartphone.
+2. **Mobile Application** - Can be installed on an Android Smartphone. (iOS App still in disussion as we are cheking the feasibilty on this.)
+3. **Backend Application** - will take care of data management and CRUD operations (Create, Read, Update, Delete). Web application and Mobile application will talk to this backend application for data operations. User will not need to access this component directly.
+4. **Database** - where we keep all the data we are going to collect. Right we have planned to proceed with simple **MySQL** database as we are note expecting large dataset or large queries on this data. (Will be able to scale as needed)
+
+---
+
+## IT Infrastructure
+
+- Right now using temporary servers in the Google Cloud Platform (Data centers in India) from personal accounts. 
+- Need to move the servers to official accounts before going live (Before start using the application.)
+
+---
+
+## Current Status
+
+(As of 30 June 2021)
+
+- Backend Application - in progress (~30%) (Database already configured to use in the cloud)
+- Frontend Application -  in progress (Initiated)
+- Mobile Application -  in progress (Initiated)
+
+---
+
+## Action Items:
+
+1. Need to decide where to keep the application in the cloud.
+2. Need to take the ownership of hosting.
+3. Need to decide the long plan for keeping the site/appication up and running.
+
+---
+
+class: center, middle
+
+(End of slides)
 
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
